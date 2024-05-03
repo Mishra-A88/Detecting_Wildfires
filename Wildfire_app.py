@@ -110,8 +110,10 @@ def main():
             
     with col3:
         st.write("")
-
-    # st.sidebar.image(img, use_column_width=True)
+        
+    logos = glob('logos/*.png')
+        for img in logos:
+            st.sidebar.image(img, use_column_width=True)
 
     # Description
 
