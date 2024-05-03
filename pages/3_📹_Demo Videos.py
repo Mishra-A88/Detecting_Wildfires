@@ -31,7 +31,7 @@ st.markdown(
         unsafe_allow_html=True
     )
 
-st.markdown("<div class='title'>Display demo videos</div>", unsafe_allow_html=True)
+st.markdown("<div class='title'>Test videos</div>", unsafe_allow_html=True)
 
 
 st.caption("<div class='text'>Videos do not have sound.</div>", unsafe_allow_html=True)
