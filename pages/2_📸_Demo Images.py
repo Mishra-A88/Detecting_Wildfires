@@ -27,9 +27,9 @@ st.markdown(
         unsafe_allow_html=True
     )
 
-st.markdown("<div class='title'>Demo Images</div>", unsafe_allow_html=True)
+st.markdown("<div class='title'>Result Images</div>", unsafe_allow_html=True)
 
-images = glob('demo-images/*.jpeg')
+images = glob('result-images/*.jpeg')
 
 for image in images:
     st.image(image, use_column_width=True)
