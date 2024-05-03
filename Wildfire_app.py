@@ -98,15 +98,7 @@ def main():
         """,
         unsafe_allow_html=True
     )
-    side=st.sidebar
-    path=glob('logos/logo.png')
-    with open(path, "rb") as f:
-            data=base64.b64encode(f.read()).decode("utf-8")
-            side.markdown( f"""
-                       
-            <div style="display:table; margin-top: -30%">
-                <img src="data:image/png;base64, {data}" width="250" height="120">
-            </div> """, unsafe_allow_html=True)
+    
     # App title
     st.markdown("<div class='title'>Wildfire Detection</div>", unsafe_allow_html=True)
 
