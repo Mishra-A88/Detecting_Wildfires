@@ -27,7 +27,7 @@ st.markdown(
         unsafe_allow_html=True
     )
 
-st.markdown("<div class='title'>Display demo images</div>", unsafe_allow_html=True)
+st.markdown("<div class='title'>Test images</div>", unsafe_allow_html=True)
 
 images = glob('result-images/*.jpeg')
 
