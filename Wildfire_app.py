@@ -112,8 +112,8 @@ def main():
         st.write("")
         
     logos = glob('logos/*.png')
-        for img in logos:
-            st.sidebar.image(img, use_column_width=True)
+    for img in logos:
+        st.sidebar.image(img, use_column_width=True)
 
     # Description
 
