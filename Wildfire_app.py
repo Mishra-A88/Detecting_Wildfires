@@ -99,7 +99,7 @@ def main():
         unsafe_allow_html=True
     )
     side=st.sidebar
-    path=r'logos/*.png'
+    path=glob('logos/logo.png')
     with open(path, "rb") as f:
             data=base64.b64encode(f.read()).decode("utf-8")
             side.markdown( f"""
