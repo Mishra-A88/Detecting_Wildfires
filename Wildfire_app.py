@@ -68,6 +68,10 @@ def main():
         initial_sidebar_state="collapsed",
     )
     
+    logos = glob('logos/*.png')
+    for img in logos:
+        st.sidebar.image(img, use_column_width=True)
+        
     # Set custom CSS styles
     st.markdown(
         """
@@ -111,10 +115,6 @@ def main():
     with col3:
         st.write("")
         
-    logos = glob('logos/*.png')
-    for img in logos:
-        st.sidebar.image(img, use_column_width=True)
-
     # Description
 
     st.markdown(
