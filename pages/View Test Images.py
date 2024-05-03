@@ -26,7 +26,9 @@ st.markdown(
         """,
         unsafe_allow_html=True
     )
-
+logos = glob('logos/*.png')
+for img in logos:
+        st.sidebar.image(img, use_column_width=True)
 st.markdown("<div class='title'>Test images</div>", unsafe_allow_html=True)
 
 images = glob('result-images/*.jpeg')
