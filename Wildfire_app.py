@@ -68,7 +68,7 @@ def main():
         initial_sidebar_state="collapsed",
     )
     
-    logos = glob('logos/*.png')
+    logos = glob('logos/logo.png')
     for img in logos:
         st.sidebar.image(img, use_column_width=True)
         
